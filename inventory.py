@@ -1,3 +1,6 @@
+# 2020/03/02
+# Inventory assignment for CS30
+
 title = ["shotty ", "lightning "]
 inventory = []
 inventory_part2 = []
