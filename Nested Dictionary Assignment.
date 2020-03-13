@@ -1,0 +1,37 @@
+### inventory characters assignment
+inventory = {"Swordsman": {"Shortsword":
+                          {"description": "A small iron blade",
+                          "damage": 100, "protection": 5},
+                          "Sheild":
+                          {"description": "Protects from blows",
+                          "damage": 10, "protection": 50},
+                          "Chainmail Armour":
+                          {"description":
+                           "Armour for the swordsman",
+                           "damage": 0, "protection": 100}},
+             "Marksman": {"Bow":
+                        {"description": "A long range projectile",
+                         "damage": 10, "protection": 0},
+                        "Arrows":
+                        {"description": "ammo for the bow",
+                         "damage": 50, "protection": 0},
+                        "Quiver":
+                        {"description":
+                         "Quiver of arrows",
+                         "damage": 0, "protection": 0}},
+             "Tank": {"Godly armour":
+                          {"description":
+                           "protection against almost all attacks",
+                           "damage": 0, "protection": 100}}
+             }
+
+
+for player in inventory:
+    for item in inventory[player]:
+        description = inventory[player][item]["description"]
+        damage = inventory[player][item]["damage"]
+        protection = inventory[player][item]["protection"]
+        print(f"{player}'s {item} - {description}")
+        print(f"damage: {damage}")
+        print(f"protection: {protection}")
+        print("\n")
